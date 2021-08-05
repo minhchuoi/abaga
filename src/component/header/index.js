@@ -40,8 +40,8 @@ export const Header = () => {
                 onMouseOut={()=>setMenuSub('menu-sub-display')}
           className='menu' height="48px" src='/menu.png' alt="menu" />
           <div 
-          onMouseOver={()=>setMenuSub('menu-sub')}
-          onMouseOut={()=>setMenuSub('menu-sub-display')}
+            onMouseOver={()=>setMenuSub('menu-sub')}
+            onMouseOut={()=>setMenuSub('menu-sub-display')}
           className={menuSub}>
             <div className='option-1'>
               <img height='20px' src='/avatar.png' alt='' />
