@@ -85,7 +85,6 @@ export const PagingStyle = styled.div`
     }
     .number-page-disabled{
       display: none;
-      /* pointer-events: none; */
     }
   }
   .right{

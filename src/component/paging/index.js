@@ -5,7 +5,6 @@ import { PagingStyle } from './style'
 export const Paging = () => {
   const sumPage = 12;
   const [currentPage, setCurrentPage] = useState(1);
-  const sumArrayPage = Math.ceil(12/5);
   const goToNextPage=()=>{
     setCurrentPage((page)=>page+1)
   }
