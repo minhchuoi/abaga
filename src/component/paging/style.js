@@ -45,9 +45,24 @@ export const PagingStyle = styled.div`
     .icon-next{
       transform: rotate(180deg);
       margin-left: 13px;
+      &:hover{
+        cursor: pointer;
+      }
     }
-    .icon-back{
+    .icon-next-disabled{
+      transform: rotate(180deg);
+      margin-left: 13px;
+      pointer-events: none;
+    }
+    .icon-prev{
       margin-right: 13px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .icon-prev-disabled{
+      margin-right: 13px;
+      pointer-events: none;
     }
     .number-page{
       display: flex;
@@ -56,6 +71,7 @@ export const PagingStyle = styled.div`
       font-size: 14px;
       width: 32px;
       height: 32px;
+      cursor: pointer;
     }
     .number-page-select{
       display: flex;
@@ -66,6 +82,10 @@ export const PagingStyle = styled.div`
       height: 32px;
       background-color: #E4E4E4;
       border-radius: 50%;
+    }
+    .number-page-disabled{
+      display: none;
+      /* pointer-events: none; */
     }
   }
   .right{
